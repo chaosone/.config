@@ -1,0 +1,87 @@
+tabspaces: 4 sls
+mouse:
+  hide_when_typing: true
+colors:
+  # Default colors
+  primary:
+    background: '#282a36'
+    foreground: '#f8f8f2'
+
+  # Normal colors
+  normal:
+    black: '#000000'
+    red: '#ff5555'
+    green: '#50fa7b'
+    yellow: '#f1fa8c'
+    blue: '#caa9fa'
+    magenta: '#ff79c6'
+    cyan: '#8be9fd'
+    white: '#bfbfbf'
+
+  # Bright colors
+  bright:
+    black: '#575b70'
+    red: '#ff6e67'
+    green: '#5af78e'
+    yellow: '#f4f99d'
+    blue: '#caa9fa'
+    magenta: '#ff92d0'
+    cyan: '#9aedfe'
+    white: '#e6e6e6'
+
+# 设置字体
+font:
+  normal:
+    family: "Hack Nerd Font"
+    style: Regular
+  bold:
+    family: "Hack Nerd Font"
+    style: Bold
+  italic:
+    family: "Hack Nerd Font"
+    style: Italic
+  bold_italic:
+    family: "Hack Nerd Font"
+    style: Bold Italic
+
+  # 字大小
+  size: 13.0
+
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+
+window:
+  opacity: 0.8
+  padding:
+    x: 0
+    y: 0
+
+scrolling:
+  # 回滚缓冲区中的最大行数,指定“0”将禁用滚动。
+  history: 10000
+
+  # 滚动行数 
+  multiplier: 10
+
+# 如果为‘true’，则使用亮色变体绘制粗体文本。
+draw_bold_text_with_bright_colors: true
+
+selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: true
+
+live_config_reload: true
+
+key_bindings:
+  - { key: V, mods: command, action: Paste }
+  - { key: C, mods: command, action: Copy }
+  #- { key: H,mods: Control, action: Hide }
+# 窗口标题
+title: Alacritty
+
+# 是否允许终端的应用更改窗口标题
+dynamic_title: true
